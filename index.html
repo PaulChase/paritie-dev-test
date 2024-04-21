@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paritie Dev</title>
+		<link rel="stylesheet" href="/dist/style.css" />
+
+		<!-- font awesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- alpine js cdn -->
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			* {
+				font-family: "Jost", sans-serif;
+				font-optical-sizing: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- hero section -->
+		<section class="bg-[#474747] min-h-screen w-full flex items-center justify-start relative">
+			<nav
+				class="text-white flex items-center justify-between border-b-2 border-white divide-x-2 absolute top-0 left-0 w-full"
+			>
+				<div class="p-6">
+					<h1>Creative Logo</h1>
+				</div>
+
+				<div class="flex items-center justify-between flex-1 p-6">
+					<ul class="flex items-center gap-6">
+						<li class="uppercase font-semibold">
+							<a href="#">Home</a>
+						</li>
+						<li class="uppercase font-semibold">
+							<a href="#">Services</a>
+						</li>
+						<li class="uppercase font-semibold">
+							<a href="#">Pages</a>
+						</li>
+						<li class="uppercase font-semibold">
+							<a href="#">Case Shop</a>
+						</li>
+						<li class="uppercase font-semibold">
+							<a href="#">Blog</a>
+						</li>
+						<li class="uppercase font-semibold">
+							<a href="#">Content</a>
+						</li>
+					</ul>
+
+					<div>
+						<ul class="flex items-center gap-6 text-2xl">
+							<li>
+								<a href="#">
+									<span class="fab fa-instagram"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fab fa-linkedin"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fab fa-twitter"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fab fa-facebook"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="p-6 text-2xl">
+					<span class="fa fa-search"></span>
+				</div>
+
+				<div class="p-6">
+					<p class="font-medium">Need help?</p>
+					<p class="font-semibold">+92 666 888 0000</p>
+				</div>
+			</nav>
+
+			<div class="max-w-7xl mx-auto w-full">
+				<div class="text-white space-y-10">
+					<p class="bg-[#434B4D] px-6 py-3 text-sm font-medium uppercase w-fit">Welcome to Codeshaper</p>
+
+					<h1 class="text-6xl font-extrabold uppercase leading-[5rem]">
+						Consulting <br />
+						For Every <br />
+						Business
+					</h1>
+
+					<a
+						href="#"
+						class="inline-block bg-[#3C72FC] text-white uppercase px-10 py-3 text-xs tracking-wide font-medium"
+					>
+						Discover More
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 2nd section -->
+		<section class="bg-[#0F0D1D] text-white">
+			<div class="max-w-7xl mx-auto py-14 space-y-20">
+				<div>
+					<h2 class="text-3xl font-bold uppercase text-center">Real-world Experience</h2>
+					<p class="text-center mt-2 text-gray-400">The best business consulting firm you can count on!</p>
+				</div>
+
+				<div class="grid grid-cols-3 gap-8">
+					<div class="bg-black p-12 rounded-md">
+						<p class="text-lg uppercase font-semibold">Wealth Management</p>
+
+						<div class="flex justify-between items-center mt-4">
+							<a href="#" class="text-xs text-gray-500 uppercase"> Read more </a>
+							<img src="/assets/bitbucket.png" alt="" class="h-14" />
+						</div>
+					</div>
+					<div class="bg-black p-12 rounded-md">
+						<p class="text-lg uppercase font-semibold">Wealth Management</p>
+
+						<div class="flex justify-between items-center mt-4">
+							<a href="#" class="text-xs text-gray-500 uppercase"> Read more </a>
+							<img src="/assets/bitbucket.png" alt="" class="h-14" />
+						</div>
+					</div>
+					<div class="bg-black p-12 rounded-md">
+						<p class="text-lg uppercase font-semibold">Wealth Management</p>
+
+						<div class="flex justify-between items-center mt-4">
+							<a href="#" class="text-xs text-gray-500 uppercase"> Read more </a>
+							<img src="/assets/bitbucket.png" alt="" class="h-14" />
+						</div>
+					</div>
+				</div>
+
+				<div class="flex items-center">
+					<hr class="flex-grow h-[2px] bg-gray-300" />
+					<span class="mx-4 text-gray-600">Meet the Partners</span>
+					<hr class="flex-grow h-[2px] bg-gray-300" />
+				</div>
+
+				<div class="flex justify-between items-center w-full">
+					<button class="h-10 w-10 flex justify-center items-center bg-[#4D7BF2] text-blue-800">
+						<span class="fa fa-arrow-left"></span>
+					</button>
+					<button class="h-10 w-10 flex justify-center items-center bg-[#4D7BF2] text-blue-800">
+						<span class="fa fa-arrow-right"></span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- 3rd section -->
+		<section>
+			<div class="max-w-7xl mx-auto pt-20 pb-40 grid grid-cols-2 gap-10">
+				<div class="bg-primary h-20 w-20 flex justify-center items-center rounded-lg text-white text-3xl">
+					<span class="fa fa-play"> </span>
+				</div>
+
+				<div class="space-y-10">
+					<h3 class="text-3xl font-bold uppercase">We're leading in the market</h3>
+
+					<p class="text-gray-600 text-sm">
+						Lorem ipsum is simply free text dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor
+						incididunt ut labore et doloremagna aliqua lonm andhn.
+					</p>
+
+					<p class="text-primary text-lg">
+						We have 35+ years of experience. We offer marketing and consulting services
+					</p>
+
+					<div class="space-y-4">
+						<div>
+							<div class="bg-gray-300 h-4 relative rounded-full">
+								<div
+									class="absolute left-0 top-0 bg-primary h-full w-4/5 flex items-center text-xs justify-end text-white rounded-full px-2"
+								>
+									80%
+								</div>
+							</div>
+							<p class="font-medium uppercase text-sm mt-1">Consulting</p>
+						</div>
+						<div>
+							<div class="bg-gray-300 h-4 relative rounded-full">
+								<div
+									class="absolute left-0 top-0 bg-primary h-full w-3/5 flex items-center text-xs justify-end text-white rounded-full px-2"
+								>
+									60%
+								</div>
+							</div>
+							<p class="font-medium uppercase text-sm mt-1">Advices</p>
+						</div>
+					</div>
+
+					<div class="flex items-center gap-4">
+						<div class="h-14 w-14 bg-blue-100 flex justify-center items-center text-primary text-xl">
+							<span class="fa fa-phone"></span>
+						</div>
+
+						<div>
+							<p>Have any question? Give us a call</p>
+							<p>+92 666 888 0000</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-cols-2 -mt-20 relative z-20 max-w-6xl mx-auto -mb-16">
+				<div class="flex items-center gap-4 bg-white p-10 shadow-2xl">
+					<div class="h-14 w-14 bg-blue-100 flex justify-center items-center text-primary text-xl font-bold">01</div>
+
+					<div>
+						<h3 class="text-lg font-semibold mb-1">Get Professional Advice</h3>
+						<p>There are many variations of available but the majority have suffered alteration.</p>
+					</div>
+				</div>
+				<div class="flex items-center gap-4 bg-white p-10 shadow-2xl">
+					<div class="h-14 w-14 bg-blue-100 flex justify-center items-center text-primary text-xl font-bold">02</div>
+
+					<div>
+						<h3 class="text-lg font-semibold mb-1">Get Professional Advice</h3>
+						<p>There are many variations of available but the majority have suffered alteration.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4th section -->
+		<section class="bg-blue-50">
+			<div class="max-w-7xl mx-auto pt-28 py-20">
+				<div>
+					<h1 class="text-3xl font-bold text-center uppercase">New Case studies</h1>
+					<p class="text-gray-600 text-center mt-4 font-medium">We help our clients renew their business</p>
+				</div>
+
+				<div class="grid grid-cols-3 gap-8 mt-20">
+					<div class="bg-[#8F8DA0] text-white p-6 h-96 flex items-end">
+						<div class="space-y-2">
+							<span class="fa fa-car text-3xl block"></span>
+							<p class="uppercase text-sm font-medium">Thought Leadership</p>
+							<h4 class="uppercase font-bold text-3xl">Business growth</h4>
+						</div>
+					</div>
+					<div class="bg-[#8F8DA0] text-white p-6 h-96 flex items-end">
+						<div class="space-y-2">
+							<span class="fa fa-car text-3xl block"></span>
+							<p class="uppercase text-sm font-medium">Thought Leadership</p>
+							<h4 class="uppercase font-bold text-3xl">Business growth</h4>
+						</div>
+					</div>
+					<div class="bg-[#8F8DA0] text-white p-6 h-96 flex items-end">
+						<div class="space-y-2">
+							<span class="fa fa-car text-3xl block"></span>
+							<p class="uppercase text-sm font-medium">Thought Leadership</p>
+							<h4 class="uppercase font-bold text-3xl">Business growth</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 5th section -->
+		<section class="bg-[#0F0D1D]/75 text-white flex items-center justify-center py-14">
+			<div class="max-w-lg">
+				<p class="text-4xl font-bold uppercase text-center leading-[3rem]">
+					Mission is to protect your businesses & much more
+				</p>
+				<a
+					href="#"
+					class="w-fit mt-12 block bg-[#3C72FC] text-white uppercase px-10 py-3 text-sm tracking-wide font-medium mx-auto"
+				>
+					Discover More
+				</a>
+			</div>
+		</section>
+
+		<!-- 6th section -->
+		<section>
+			<div class="max-w-7xl mx-auto py-20">
+				<div>
+					<h1 class="text-3xl font-bold text-center uppercase">Question & Answers</h1>
+					<p class="text-gray-600 text-center mt-4 font-medium">We help our clients renew their business</p>
+				</div>
+
+				<div class="grid grid-cols-2 gap-6 items-end mt-20">
+					<div x-data="{ open: null }" class="space-y-6">
+						<template x-for="(faq, index) in faqs" :key="index">
+							<div class="bg-white shadow overflow-hidden">
+								<button
+									@click="open === index ? open = null : open = index"
+									class="flex justify-between items-center w-full p-6 font-semibold"
+									:class="open === index ? ' bg-white' : 'bg-gray-100 ' "
+								>
+									<span x-text="faq.question" class="uppercase text-sm"></span>
+
+									<span class="fa fa-minus" x-show="open === index"></span>
+									<span class="fa fa-plus" x-show="open !== index"></span>
+								</button>
+								<div
+									x-show="open === index"
+									x-transition:enter="transition ease-out duration-300"
+									x-transition:enter-start="transform opacity-0 scale-95"
+									x-transition:enter-end="transform opacity-100 scale-100"
+									x-transition:leave="transition ease-in duration-200"
+									x-transition:leave-start="transform opacity-100 scale-100"
+									x-transition:leave-end="transform opacity-0 scale-95"
+								>
+									<div class="p-4">
+										<p class="text-gray-700" x-text="faq.answer"></p>
+									</div>
+								</div>
+							</div>
+						</template>
+					</div>
+
+					<div class="grid grid-cols-4">
+						<ul class="col-span-3">
+							<li><span class="fa fa-check text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+							<li><span class="fa fa-check text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+							<li><span class="fa fa-check text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+							<li><span class="fa fa-check text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+							<li><span class="fa fa-check text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+						</ul>
+
+						<div class="bg-primary text-white flex justify-center items-center">
+							<div class="text-center">
+								<p class="text-4xl font-bold">30</p>
+								<p class="font-medium">Years of experience</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 7th section -->
+		<section class="bg-gray-100">
+			<div class="max-w-7xl mx-auto py-20 grid grid-cols-3 gap-6 items-center">
+				<div class="space-y-6">
+					<h3 class="text-4xl font-bold uppercase">What are they saying about us?</h3>
+
+					<p class="font-medium text-gray-600">Trusted by more than 4,200 customers</p>
+
+					<div class="flex items-center gap-2">
+						<button class="h-10 w-10 rounded-full flex justify-center items-center bg-white">
+							<span class="fa fa-arrow-left"> </span>
+						</button>
+						<button class="h-10 w-10 rounded-full flex justify-center items-center bg-white">
+							<span class="fa fa-arrow-right"> </span>
+						</button>
+					</div>
+				</div>
+
+				<div class="bg-white px-6 py-10 space-y-4">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem harum quo ratione facere quisquam
+						minus ut praesentium sint tenetur, esse reprehenderit perferendis omnis sed architecto culpa voluptatem.
+						Quisquam, saepe.
+					</p>
+
+					<p class="text-lg text-primary font-semibold uppercase">John Doe</p>
+
+					<p class="text-xs text-gray-500">Customer</p>
+				</div>
+				<div class="bg-white px-6 py-10 space-y-4">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem harum quo ratione facere quisquam
+						minus ut praesentium sint tenetur, esse reprehenderit perferendis omnis sed architecto culpa voluptatem.
+						Quisquam, saepe.
+					</p>
+
+					<p class="text-lg text-primary font-semibold uppercase">John Doe</p>
+
+					<p class="text-xs text-gray-500">Customer</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 8th section -->
+		<section class="bg-[#07122D] text-white py-20">
+			<div class="max-w-6xl mx-auto grid grid-cols-4 gap-6">
+				<div class="text-center space-y-4">
+					<div>
+						<img src="/assets/brainstorming.png" alt="" class="mx-auto" />
+						<p class="text-2xl font-bold mt-1">420</p>
+					</div>
+
+					<p>Consulting solutions</p>
+				</div>
+				<div class="text-center space-y-4">
+					<div>
+						<img src="/assets/brainstorming.png" alt="" class="mx-auto" />
+						<p class="text-2xl font-bold mt-1">420</p>
+					</div>
+
+					<p>Consulting solutions</p>
+				</div>
+				<div class="text-center space-y-4">
+					<div>
+						<img src="/assets/brainstorming.png" alt="" class="mx-auto" />
+						<p class="text-2xl font-bold mt-1">420</p>
+					</div>
+
+					<p>Consulting solutions</p>
+				</div>
+				<div class="text-center space-y-4">
+					<div>
+						<img src="/assets/brainstorming.png" alt="" class="mx-auto" />
+						<p class="text-2xl font-bold mt-1">420</p>
+					</div>
+
+					<p>Consulting solutions</p>
+				</div>
+			</div>
+
+			<div class="max-w-7xl mx-auto grid grid-cols-3 cursor-pointer mt-20">
+				<div class="text-center p-10 bg-gray-100 hover:bg-white text-gray-700 uppercase text-lg font-semibold">
+					Business growth
+				</div>
+				<div class="text-center p-10 bg-gray-100 hover:bg-white text-gray-700 uppercase text-lg font-semibold">
+					Business growth
+				</div>
+				<div class="text-center p-10 bg-gray-100 hover:bg-white text-gray-700 uppercase text-lg font-semibold">
+					Business growth
+				</div>
+			</div>
+		</section>
+
+		<!-- 9th section -->
+		<section>
+			<div class="max-w-7xl mx-auto py-20 grid grid-cols-3 gap-6">
+				<div>
+					<div class="flex items-center gap-4 bg-white p-6">
+						<div class="h-14 w-14 bg-blue-100 flex justify-center items-center text-primary text-xl font-bold">
+							<img src="/assets/check.png" alt="" />
+						</div>
+
+						<div>
+							<h3 class="text-lg font-semibold mb-3 uppercase">High Success Rates</h3>
+							<p>
+								Lorem Ipsum nibh vel velit auctor aliqu. Aenean sollic tudin, lorem is simply free text quis bibendum.p>
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-4 bg-white p-6">
+						<div class="h-14 w-14 bg-blue-100 flex justify-center items-center text-primary text-xl font-bold">
+							<img src="/assets/check.png" alt="" />
+						</div>
+
+						<div>
+							<h3 class="text-lg font-semibold mb-3 uppercase">We build experience</h3>
+							<p>
+								Lorem Ipsum nibh vel velit auctor aliqu. Aenean sollic tudin, lorem is simply free text quis bibendum.p>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<p>
+						There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in
+						some form injected humour or randomised words which don't look believable.
+					</p>
+
+					<ul class="mt-4">
+						<li><span class="fa fa-minus text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+						<li><span class="fa fa-minus text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+						<li><span class="fa fa-minus text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+						<li><span class="fa fa-minus text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+						<li><span class="fa fa-minus text-primary mr-2"></span> Lorem ipsum dolor sit amet.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- js code -->
+		<script>
+			const faqs = [
+				{
+					question: "What services do you offer?",
+					answer:
+						"We offer a wide range of consultancy services including business strategy, market research, financial analysis, and project management.",
+				},
+				{
+					question: "How experienced is your team?",
+					answer:
+						"Our team consists of highly experienced professionals with expertise in various industries. We have a proven track record of delivering successful consultancy projects.",
+				},
+				{
+					question: "How do I get started with your consultancy services?",
+					answer:
+						"To get started, simply contact us through our website or give us a call. We will schedule an initial consultation to discuss your needs and tailor our services to meet your specific requirements.",
+				},
+				{
+					question: "What sets your consultancy apart from others?",
+					answer:
+						"What sets us apart is our dedication to understanding our clients' unique challenges and providing customized solutions that drive tangible results. We prioritize building long-term partnerships and delivering value to our clients.",
+				},
+			];
+		</script>
+	</body>
+</html>
